@@ -1,2 +1,2 @@
-# Curso-de-Java
-Curso de Java
+# Curso de Java 
+Prácticas de Java
