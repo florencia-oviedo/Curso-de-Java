@@ -1,0 +1,29 @@
+package graficos;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.*;
+
+public class MarcoCentrado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoCentrado2 mimarco = new MarcoCentrado2();
+
+	}
+
+}
+
+class MarcoCentrado2 extends JFrame{
+	
+	public MarcoCentrado2() {
+		Toolkit mipantalla = Toolkit.getDefaultToolkit();
+		Dimension tamanioPantalla = mipantalla.getScreenSize();
+		int alturaPantalla = tamanioPantalla.height;
+		int anchoPantalla = tamanioPantalla.width;
+		setSize(anchoPantalla/2,alturaPantalla/2);
+		setLocation(anchoPantalla/4,alturaPantalla/4);
+		
+	}
+}

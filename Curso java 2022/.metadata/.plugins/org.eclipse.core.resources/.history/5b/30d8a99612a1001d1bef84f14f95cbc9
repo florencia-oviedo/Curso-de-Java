@@ -1,0 +1,39 @@
+package graficos;
+
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.SystemColor;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PruebaConBotones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoConBotones marco = new MarcoConBotones();
+		marco.setVisible(true);
+		marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+class MarcoConBotones extends JFrame{
+	
+	public MarcoConBotones() {
+		setTitle("Botones y eventos");
+		setBounds(700,300,500,300);
+		LaminaConBotones lamina = new LaminaConBotones();
+		add(lamina); 
+	}
+}
+
+class LaminaConBotones extends JPanel{
+	
+	
+		
+		
+		
+		
+		
+	}
+}

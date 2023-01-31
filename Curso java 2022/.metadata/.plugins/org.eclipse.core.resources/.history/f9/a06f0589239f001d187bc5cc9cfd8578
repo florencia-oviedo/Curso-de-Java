@@ -1,0 +1,58 @@
+package graficos;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.*;
+
+public class PruebaConImagenes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoConImagen marco = new MarcoConImagen();
+		marco.setVisible(true);
+		marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+class MarcoConImagen extends JFrame{
+	
+	public MarcoConImagen() {
+		setTitle("Prueba de imagen");
+		setBounds(750,300,300,200); 
+		LaminaConImagen lamina = new LaminaConImagen();
+		add(lamina);
+		
+	}
+}
+
+class LaminaConImagen extends JPanel{
+	
+	//sobreescribimos el metodo paintComponent
+	public void paintComponent(Graphics g) {
+		
+		super.paintComponent(g);
+		File miimagen = new File("src/graficos/candado.png");
+		try {
+			imagen = ImageIO.read(miimagen);
+		}
+		catch(IOException e) {
+			System.out.println("La imagen no se encuentra");
+		}
+		
+		g.drawImage(imagen, 0, 0, null);
+		
+		g.copyArea(0, 0, 48, 48, 150, 75);
+		
+		
+		
+		
+		
+		
+		
+	}
+	private Image imagen;
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Nacho\Documents\Curso java 2022\.metadata\.plugins\org.eclipse.jdt.core
+473005464.index
+1865797976.index
+1092027024.index
+3701531455.index
+2892968915.index

@@ -1,0 +1,15 @@
+package graficos;
+
+import java.awt.GraphicsEnvironment;
+
+public class Pruebass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String nombreDeFuentes [] = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+		for(String nombrefuente : nombreDeFuentes) {
+			System.out.println(nombrefuente);
+		}
+	}
+
+}

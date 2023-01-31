@@ -1,0 +1,48 @@
+package graficos;
+
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PruebaConFuentes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoConFuente marco = new MarcoConFuente();
+		marco.setVisible(true);
+		marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+class MarcoConFuente extends JFrame{
+	
+	public MarcoConFuente() {
+		setTitle("Prueba de fuente");
+		setSize(400,400);
+		LaminaConFuente lamina = new LaminaConFuente();
+		add(lamina);
+	}
+}
+
+class LaminaConFuente extends JPanel{
+	
+	//sobreescribimos el metodo paintComponent
+	public void paintComponent(Graphics g) {
+		
+		super.paintComponent(g);
+		
+		Graphics2D g2 = (Graphics2D) g;
+		Font mifuente = new Font("Arial",Font.BOLD,26);
+		g2.setFont(mifuente);
+		g2.drawString("Florencia programadora", 100, 100);
+		
+		
+	}
+}

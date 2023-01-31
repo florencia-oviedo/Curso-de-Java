@@ -1,0 +1,21 @@
+package graficos;
+
+import java.awt.Toolkit;
+
+import javax.swing.*;
+
+public class MarcoCentrado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class MarcoCentrado2 extends JFrame{
+	
+	public MarcoCentrado2() {
+		Toolkit mipantalla = Toolkit.getDefaultToolkit();
+	}
+}
