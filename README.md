@@ -1,2 +1,2 @@
 # Curso de Java 
-Prácticas de Java
+Ejercicios de Java 
