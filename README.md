@@ -1,4 +1,4 @@
-# Curso de Java
+# Java ejercicios
 <ul>Temas:
   <li>Java básico</li>
   <li>Java POO</li>
